@@ -1,25 +1,20 @@
-// function insertAfter(referenceNode, newNode) {
-//     referenceNode.parentNode.insertBefore(newNode, referenceNode.nextSibling);
-// }
-
 function updateAllResume() {
-    const buttonsToClick = document.querySelectorAll('button[data-qa="resume-update-button"]');
-    if (buttonsToClick.length > 0) {
-        buttonsToClick.forEach((button) => {
-            try {
-                button.click()
-            } catch (err) {
-                console.error(err);
-            }
-        });
-    }
-    // } else {
-    //     let buttonMain = document.querySelector('button#cta')
-    //     let textNotification = document.createElement('p')
-    //     textNotification.innerHTML = 'No buttons found'
-    //     insertAfter(buttonMain, textNotification);
-    // }
+  // Select all buttons
+  const buttonsToClick = document.querySelectorAll(
+    'button[data-qa="resume-update-button"]'
+  );
 
+  // Click each of them
+  buttonsToClick.forEach((button) => {
+    try {
+      button.click();
+    } catch (err) {
+      console.error(err);
+    }
+  });
 }
 
+// Every four hours from this moment execute the updateAllResume function
+setInterval(updateAllResume, 4 * 60 * 60 * 1000);
+// Execute function now
 updateAllResume();
