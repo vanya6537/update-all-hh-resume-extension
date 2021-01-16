@@ -1,0 +1,34 @@
+{
+  "name": "update-all-hh-resume-extension",
+  "version": "1.0.0",
+  "description": "Automatically raise to the top all your HeadHunter resume ",
+  "main": "content_script.js",
+  "scripts": {
+    "release": "release-it"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/vanya6537/update-all-hh-resume-extension.git"
+  },
+  "keywords": [
+    "hh",
+    "headhunter",
+    "resume",
+    "raise",
+    "top",
+    "automation",
+    "extension",
+    "google",
+    "asteratart",
+    "vanya6537"
+  ],
+  "author": "Ivan Katkov <vanya6537@gmail.com> (https://github.com/vanya6537)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/vanya6537/update-all-hh-resume-extension/issues"
+  },
+  "homepage": "https://github.com/vanya6537/update-all-hh-resume-extension#readme",
+  "devDependencies": {
+    "release-it": "^14.2.2"
+  }
+}
