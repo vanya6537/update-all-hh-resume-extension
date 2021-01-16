@@ -1,6 +1,6 @@
 {
   "name": "update-all-hh-resume-extension",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "Automatically raise to the top all your HeadHunter resume ",
   "main": "content_script.js",
   "scripts": {
