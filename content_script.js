@@ -1,4 +1,6 @@
-function updateAllResume() {
+const fourHours = 4 * 60 * 60 * 1000;
+
+function raiseAllResume() {
   // Select all buttons
   const buttonsToClick = document.querySelectorAll(
     'button[data-qa="resume-update-button"]'
@@ -14,7 +16,9 @@ function updateAllResume() {
   });
 }
 
-// Every four hours from this moment execute the updateAllResume function
-setInterval(updateAllResume, 4 * 60 * 60 * 1000);
-// Execute function now
-updateAllResume();
+raiseAllResume();
+
+setTimeout(
+  () => chrome.runtime.sendMessage({ reloadAndRepeat: true }),
+  fourHours
+);
